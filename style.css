@@ -12,7 +12,7 @@ body {
     overflow: hidden; /* Evita barras de rolagem */
     
     /* Configuração da Imagem de Fundo */
-    background-image: url('images/fundo.jpeg');
+    background-image: url('images/fundo.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -123,3 +123,4 @@ p {
         transform: translateY(0);
     }
 }
+
