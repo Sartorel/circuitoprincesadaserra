@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circuito Princesa da Serra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Mosaico de imagens -->
+<div class="image-grid" id="imageGrid"></div>
+
+<!-- Camada escura + conteúdo -->
+<div class="overlay">
+    <div class="content">
+        <h1>Guia turístico digital em construção 🚧</h1>
+        <p>
+            O <strong>Circuito Princesa da Serra</strong> está sendo desenvolvido
+            como um guia turístico digital voltado ao ciclismo, trilhas e
+            experiências off-road na Serra Catarinense.
+            <br><br>
+            Em breve, você poderá explorar rotas, trajetos, paisagens naturais
+            e pontos históricos — tudo na palma da sua mão.
+        </p>
+    </div>
+</div>
+
+<script>
+    const totalImages = 43;
+    const grid = document.getElementById('imageGrid');
+
+    for (let i = 1; i <= totalImages; i++) {
+        const img = document.createElement('img');
+        const number = String(i).padStart(2, '0');
+        img.src = `images/${number}.jpg`;
+        img.alt = `Circuito Princesa da Serra ${number}`;
+        grid.appendChild(img);
+    }
+</script>
+
+</body>
+</html>
