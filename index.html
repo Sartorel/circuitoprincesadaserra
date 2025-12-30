@@ -1,45 +1,27 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Circuito Princesa da Serra</title>
+    <title>Em Breve - Rota de Ciclismo Princesa da Serra</title>
     <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Mosaico de imagens -->
-    <div class="image-grid" id="imageGrid"></div>
-
-    <!-- Camada escura + conteúdo -->
-    <div class="overlay">
-        <div class="content">
-            <h1>Guia turístico digital em construção 🚧</h1>
+    <main class="container">
+        <div class="glass-card">
+            <h1>Em Construção</h1>
+            <div class="divider"></div>
             <p>
-                O <strong>Circuito Princesa da Serra</strong> está sendo desenvolvido
-                como um guia turístico digital voltado ao <strong>ciclismo</strong>,
-                <strong>trilhas</strong> e experiências <strong>off-road</strong>
-                na Serra Catarinense.
-                <br><br>
-                Em breve, você poderá explorar rotas, trajetos, paisagens naturais
-                e pontos históricos — tudo na palma da sua mão.
+                Estamos preparando a <strong>maior rota de ciclismo</strong> da Princesa da Serra.
             </p>
+            <p class="highlight">Logo teremos novidades.</p>
         </div>
-    </div>
-
-    <script>
-        const totalImages = 43;
-        const grid = document.getElementById('imageGrid');
-
-        for (let i = 1; i <= totalImages; i++) {
-            const img = document.createElement('img');
-            const number = String(i).padStart(2, '0');
-            img.src = `images/${number}.jpeg`;
-            img.alt = `Circuito Princesa da Serra ${number}`;
-            grid.appendChild(img);
-        }
-    </script>
+    </main>
 
 </body>
 </html>
-
